@@ -1,20 +1,22 @@
 # Capstone1
-    Project exploring links between NICS(firearm background checks) trends and state populations.
+Project exploring links between NICS(firearm background checks) trends and state populations.
 
 ### Team:
 
 - Richard Bellamy
 
 ## Problem Domain
-    Given the knowledge of aproximatly how many background checks were conducted for each type of firearm in each state by year and the population densities of each state by year, do any trends emerge about the types of firearms that background checks are for and the frequency they are requested in comparrison the the states population density?
+Given the knowledge of aproximatly how many background checks were conducted for each type of firearm in each state by year and the population densities of each state by year, do any trends emerge about the types of firearms that background checks are for and the frequency they are requested in comparrison the the states population density?
 
 ### Methodology
-My Nics data has columns for handgun, long_gun, and other as well as columns for all 3 with various prefixes such as 'prepawn', 'redemption', and 'private sale.  For the purpose of this study I agregate the sums of these columns into 3 coloumns handgun, long_gun, and other.
+My Nics data has columns for handgun, long_gun, and other as well as columns for all 3 with various prefixes such as 'prepawn', 'redemption', and 'private sale.  For the purpose of this study I agregate the sums of these columns into 3 coloumns handgun, long_gun, and other. I'm going to further eliminate the other and multiple coloumns because they aren't pertinent to my experiment.
 
 ### Hypothoesis
 - I predict that states with a higher population density will have more checks for handguns overall, but will be lower in terms of checks for handguns by population density.
 
 - I also predict that states with lower population density will have higher occurences of long gun applications
+
+- I predict that the ratio of handgun to long gun applications will vary in accordance with state population variations
 
 ### Prerequisites
 
