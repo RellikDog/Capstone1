@@ -31,9 +31,9 @@ The NICS data has columns for handgun, long_gun, and other as well as columns fo
 Population density is measured by persons per quare mile
 
 ### Hypothesis
-A) I predict that the ratio of handgun to long gun applications will be higher in states with higher population densities [Support](#Hypothesis-A-Support)
+A) I predict that the ratio of handgun to long gun applications will be higher in states with higher population densities. [Support](#Hypothesis-A-Support)
 
-B) I also predict that states with lower population density will have a higher occurences of rifle applications
+B) I also predict that states with lower population density will have a higher occurences of rifle applications. [Null](#Hypothesis-B-Nullification)
 
 C) I predict that states with a higher population density will have a higher occurences of handgun applications. [Null](#Hypothesis-C-Nullification)
 
@@ -79,13 +79,15 @@ Just so we can assure of ourselves of what the data would look like if we includ
 
 <img alt="Raw applications by population density" src='graphs/scatter-withDC.png'>
 
-These two graphs can help me look at my hypotosis B & C.
+Here is another example of the last chart but with each population density as the label and evenly spaced along the X axis for easier visualization
+
+<img alt="Normalized population density and raw application data" src='graphs/norm-scatter-withDC.png'>
+
 #### Hypothesis C Nullification
-By looking at the above charts I can almost certainly confirm the null hypothesis to Hypothesis(C).  There is no evidence that states with higher population densities file more applications for handguns.
+By looking at the above charts I can almost certainly confirm the null hypothesis to Hypothesis(C).  There is no evidence that states with higher population densities filed more applications for handguns.
 
 #### Hypothesis B Nullification
-It's also not apperent that states with lower population trend tword either handgun or 
-
+It's also not apperent that states with lower population densities had a higher rate of rifle applications.  In both cases the flat number of applications seems to be fairly uniform.
 
 
 
