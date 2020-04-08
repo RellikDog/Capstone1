@@ -2,9 +2,11 @@
 Project exploring links between NICS(firearm background checks) trends and state populations.
 
 ### Table of Contents
-[Data](#Data) \n
-[Findings](#Findings) \n
-[Tables](#Tables) \n
+[Data](#Data)
+
+[Findings](#Findings)
+
+[Tables](#Tables)
 
 ### Team:
 
@@ -78,7 +80,9 @@ Just so we can assure of ourselves of what the data would look like if we includ
 
 These two graphs can help me look at my hypotosis B & C.
 #### Hypothoesis C Nullification
-By looking at these charts I can almost certainly confirm the null hypothosis to H(C).  There is no evidence that states with higher population densities file more applications for handguns.  
+By looking at these charts I can almost certainly confirm the null hypothosis to H(C).  There is no evidence that states with higher population densities file more applications for handguns.
+
+
 
 
 ### Tables
