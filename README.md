@@ -2,9 +2,9 @@
 Project exploring links between NICS(firearm background checks) trends and state populations.
 
 ### Table of Contents
-[Data](#Data)
-[Findings](#Findings)
-[Tables](#Tables)
+[Data](#Data)\n
+[Findings](#Findings)\n
+[Tables](#Tables)\n
 
 ### Team:
 
@@ -56,22 +56,25 @@ To see the run book on how these finding were produced please vist the `Capstone
 I started by making two graphs that I thought would be illustrative to exploring my hypothosis. Graph A is a bar chart where each bar represents a states ratio of handgun to long gun purchases.  The dark line represents the threshold for a 1-1 ratio.
 
 Example:
-    `
-    '''
+    
     District of Columbia = 976 handgun applications and 40 rifle applications equate to a 24.4
-
     Montana = 38393 handgun applications and 58497 rifle applications for a proportion of .66
-    '''
-    `
 
 <img alt="Ratio by population density" src='graphs/bar.png'>
 
-My problem with this graph is that it is scewed in it's scope by the District of Columbia which is a massive outlier in terms of both population density and proportion of handgun to rifle applications filed.  The median population density is 107 but the mean is 423. This is obviously because of DC at 11,516 with it's next most populas state at 1201. (Table 1 & 2)  This next graph better shows the differences between states with DC removed
+My problem with this graph is that it is scewed in it's scope by the District of Columbia which is a massive outlier in terms of both population density and proportion of handgun to rifle applications filed.  The median population density is 107 but the mean is 423. This is obviously because of DC at 11,516 with it's next most populas state at 1201. Also it's handgun/rifle application proportion is 24 where the next state with the highest proportion is only 3.16 (Table 1 & 2)  This next graph better shows the differences between states with DC removed
 
 <img alt="Ratio by population density" src='graphs/bar-noDC.png'>
 
-This chart would seem to sugest that, in general, states with higher population density have a higher proportion of applications for handguns to rifles which means it supports my initial hypotoesi A. 
+This chart would seem to sugest that, in general, states with higher population density have a higher proportion of applications for handguns to rifles which means it supports my initial hypothoesis A.
 
+Next I chose to chart the raw numbers with a scatter plot so that I could look at the actual number of occurances and propotion of population density change between states.  In the following graph the lines represent a state with that states number of handgun and rifle applications being represented by dots on the each line.  Since we know that DC is such an obvious outlier we are going to begin by looking at a plot with DC's data removed.
+
+<img alt="Raw applications by population density" src='graphs/scatter.png'>
+
+Just so we can assure of ourselves of what the data would look like if we included DC here is the same chart but without the state lines and DC included
+
+<img alt="Raw applications by population density" src='graphs/scatter-withDC.png'>
 
 
 
@@ -102,7 +105,7 @@ Table 2 = Description of data excluding DC
 |50%   |2018.0|84545.0           |92793.0           |107.008805        |1.1934184019619565 |
 |75%   |2018.0|177639.75         |152579.5          |219.6491175       |1.4740263060688625 |
 |max   |2018.0|643595.0          |452932.0          |1201.0947800000001|3.1627863509456446 |
-<!-->
+<!--
 ===========================================================V TEMPLATEING IDEAS V===================================================
 
 Table 1 = Description of data including DC
@@ -222,5 +225,5 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 * Hat tip to anyone whose code was used
 * Inspiration
 * etc
-<-->
+-->
 
