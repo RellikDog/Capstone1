@@ -22,11 +22,11 @@ Given the knowledge of aproximatly how many background checks were conducted for
 The NICS data has columns for handgun, long_gun, and other as well as columns for all 3 with various prefixes such as 'prepawn', 'redemption', and 'private sale'.  For the purpose of this study I agregate the sums of these columns into 3 coloumns handgun, long_gun, and other. I'm going to further eliminate the 'other' and 'multiple' coloumns because they aren't pertinent to my experiment.
 
 ### Hypothoesis
-A) I predict that states with a higher population density will have more checks for handguns overall, but will be lower in terms of checks for handguns by population density.
+A) I predict that states with a higher population density will have more checks for handguns overall.
 
 B) I also predict that states with lower population density will have higher occurences of long gun applications
 
-C) I predict that the ratio of handgun to long gun applications will vary in accordance with state population variations
+C) I predict that the ratio of handgun to long gun applications will be higher in states with higher population densities
 
 ### Prerequisites
 
@@ -42,6 +42,10 @@ Follow link and move file from data folder to folder named data in this reposito
 
 - Population density information
 Needs to be in same data folder
+
+## Findings
+I started by making two graphs that I thought would be illustrative to exploring my hypothosis. Graph A is a bar chart where each bar represents a states ratio of handgun to long gun purchases.
+
 
 
 ===========================================================V TEMPLATEING IDEAS V===================================================
