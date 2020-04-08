@@ -30,12 +30,12 @@ The NICS data has columns for handgun, long_gun, and other as well as columns fo
 
 Population density is measured by persons per quare mile
 
-### Hypothoesis
-A) I predict that the ratio of handgun to long gun applications will be higher in states with higher population densities
+### Hypothesis
+A) I predict that the ratio of handgun to long gun applications will be higher in states with higher population densities [Support](#Hypothesis-A-Support)
 
 B) I also predict that states with lower population density will have a higher occurences of rifle applications
 
-C) I predict that states with a higher population density will have a higher occurences of handgun applications. [Null](#Hypothoesis-C-Nullification)
+C) I predict that states with a higher population density will have a higher occurences of handgun applications. [Null](#Hypothesis-C-Nullification)
 
 ### Prerequisites
 
@@ -55,7 +55,7 @@ Needs to be in same data folder
 ## Findings
 To see the run book on how these finding were produced please vist the `Capstone.ipynb` file.  You will need a copy of the data sets to run the notebook yourself but you should be able to see the prerun results
 
-I started by making two graphs that I thought would be illustrative to exploring my hypothosis. Graph A is a bar chart where each bar represents a states ratio of handgun to long gun purchases.  The dark line represents the threshold for a 1-1 ratio.
+I started by making two graphs that I thought would be illustrative to exploring my hypothesis. Graph A is a bar chart where each bar represents a states ratio of handgun to long gun purchases.  The dark line represents the threshold for a 1-1 ratio.
 
 Example:
     
@@ -68,7 +68,8 @@ My problem with this graph is that it is scewed in it's scope by the District of
 
 <img alt="Ratio by population density" src='graphs/bar-noDC.png'>
 
-This chart would seem to sugest that, in general, states with higher population density have a higher proportion of applications for handguns to rifles which means it supports my initial hypothoesis A.
+#### Hypothesis A Support
+This chart would seem to sugest that, in general, states with higher population density have a higher proportion of applications for handguns to rifles which means it supports my initial Hypothesis(A).
 
 Next I chose to chart the raw numbers with a scatter plot so that I could look at the actual number of occurances and propotion of population density change between states.  In the following graph the lines represent a state with that states number of handgun and rifle applications being represented by dots on the each line.  Since we know that DC is such an obvious outlier we are going to begin by looking at a plot with DC's data removed.
 
@@ -79,8 +80,11 @@ Just so we can assure of ourselves of what the data would look like if we includ
 <img alt="Raw applications by population density" src='graphs/scatter-withDC.png'>
 
 These two graphs can help me look at my hypotosis B & C.
-#### Hypothoesis C Nullification
-By looking at these charts I can almost certainly confirm the null hypothosis to H(C).  There is no evidence that states with higher population densities file more applications for handguns.
+#### Hypothesis C Nullification
+By looking at the above charts I can almost certainly confirm the null hypothesis to Hypothesis(C).  There is no evidence that states with higher population densities file more applications for handguns.
+
+#### Hypothesis B Nullification
+It's also not apperent that states with lower population trend tword either handgun or 
 
 
 
