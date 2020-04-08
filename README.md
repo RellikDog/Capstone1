@@ -2,9 +2,9 @@
 Project exploring links between NICS(firearm background checks) trends and state populations.
 
 ### Table of Contents
-[Data](#Data)\n
-[Findings](#Findings)\n
-[Tables](#Tables)\n
+[Data](#Data) \n
+[Findings](#Findings) \n
+[Tables](#Tables) \n
 
 ### Team:
 
@@ -31,9 +31,9 @@ Population density is measured by persons per quare mile
 ### Hypothoesis
 A) I predict that the ratio of handgun to long gun applications will be higher in states with higher population densities
 
-B) I also predict that states with lower population density will have higher occurences of long gun applications
+B) I also predict that states with lower population density will have a higher occurences of rifle applications
 
-C) I predict that states with a higher population density will have more checks for handguns overall.
+C) I predict that states with a higher population density will have a higher occurences of handgun applications. [Null](#Hypothoesis-C-Nullification)
 
 ### Prerequisites
 
@@ -76,6 +76,9 @@ Just so we can assure of ourselves of what the data would look like if we includ
 
 <img alt="Raw applications by population density" src='graphs/scatter-withDC.png'>
 
+These two graphs can help me look at my hypotosis B & C.
+#### Hypothoesis C Nullification
+By looking at these charts I can almost certainly confirm the null hypothosis to H(C).  There is no evidence that states with higher population densities file more applications for handguns.  
 
 
 ### Tables
