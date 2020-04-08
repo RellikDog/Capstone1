@@ -2,9 +2,9 @@
 Project exploring links between NICS(firearm background checks) trends and state populations.
 
 ### Table of Contents
-    [Data](#Data)
-    [Findings](#Findings)
-    [Tables](#Tables)
+[Data](#Data)
+[Findings](#Findings)
+[Tables](#Tables)
 
 ### Team:
 
@@ -56,13 +56,13 @@ To see the run book on how these finding were produced please vist the `Capstone
 I started by making two graphs that I thought would be illustrative to exploring my hypothosis. Graph A is a bar chart where each bar represents a states ratio of handgun to long gun purchases.  The dark line represents the threshold for a 1-1 ratio.
 
 Example:
-`
-'''
-District of Columbia = 976 handgun applications and 40 rifle applications equate to a 24.4
+    `
+    '''
+    District of Columbia = 976 handgun applications and 40 rifle applications equate to a 24.4
 
-Montana = 38393 handgun applications and 58497 rifle applications for a proportion of .66
-'''
-`
+    Montana = 38393 handgun applications and 58497 rifle applications for a proportion of .66
+    '''
+    `
 
 <img alt="Ratio by population density" src='graphs/bar.png'>
 
@@ -102,7 +102,7 @@ Table 2 = Description of data excluding DC
 |50%   |2018.0|84545.0           |92793.0           |107.008805        |1.1934184019619565 |
 |75%   |2018.0|177639.75         |152579.5          |219.6491175       |1.4740263060688625 |
 |max   |2018.0|643595.0          |452932.0          |1201.0947800000001|3.1627863509456446 |
-
+<!-->
 ===========================================================V TEMPLATEING IDEAS V===================================================
 
 Table 1 = Description of data including DC
@@ -222,5 +222,5 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 * Hat tip to anyone whose code was used
 * Inspiration
 * etc
-
+<-->
 
