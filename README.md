@@ -1,5 +1,5 @@
-# Capstone1
-Project exploring links between NICS(firearm background checks) trends and state populations.
+# Links Between State Population Density and NICS Applications 
+Project exploring links between NICS(FBI national firearm background checks system) trends and state populations.
 
 ### Table of Contents
 [Data](#Data)
@@ -19,23 +19,26 @@ Download NICS data at
 Used data in accordance with MIT license
 
 
-Population density density came from 
+Population Density Data:
  - https://randstatestats.org/us/stats/historical-population-density-(states-only).html
 
 ### Problem Domain
-Given the knowledge of aproximatly how many background checks were conducted for each type of firearm in each state by year and the population densities of each state by year, do any trends emerge about the types of firearms that background checks are for and the frequency they are requested in comparrison the the states population density?
+Given the knowledge of A) how many background checks were conducted for each type of firearm in each state and B) the population densities of each state, do any trends emerge about the types of firearms that background checks are applied for and the frequency they are requested in comparison to the states population density?
 
 ### Methodology
-The NICS data has columns for handgun, long_gun, and other as well as columns for all 3 with various prefixes such as 'prepawn', 'redemption', and 'private sale'.  For the purpose of this study I agregate the sums of these columns into 3 coloumns handgun, long_gun, and other. I'm going to further eliminate the 'other' and 'multiple' coloumns because they aren't pertinent to my experiment.
+The NICS data has columns for handgun, rifle(long guns), and other as well as columns for all 3 with various prefixes such as 'prepawn', 'redemption', and 'private sale'.  For the purpose of this study I aggregate the sums of these columns into 2 columns handgun and long_gun. I'm going to further eliminate the 'other' and 'multiple' columns because they don’t necessarily fall into either of the categories that my experiment is looking at.
+ 
+Population density is measured by persons per square mile
 
-Population density is measured by persons per quare mile
+#### Caveat
+This data is looking only at applications for background checks and makes no claims about the number of sales.
 
 ### Hypothesis
 A) I predict that the ratio of handgun to long gun applications will be higher in states with higher population densities. [Support](#Hypothesis-A-Support)
-
-B) I also predict that states with lower population density will have a higher occurences of rifle applications. [Null](#Hypothesis-B-Nullification)
-
-C) I predict that states with a higher population density will have a higher occurences of handgun applications. [Null](#Hypothesis-C-Nullification)
+ 
+B) I also predict that states with lower population density will have a higher occurrence of rifle applications. [Null](#Hypothesis-B-Nullification)
+ 
+C) I predict that states with a higher population density will have a higher occurrence of handgun applications. [Null](#Hypothesis-C-Nullification)
 
 ### Prerequisites
 
@@ -46,48 +49,58 @@ $python --version
 Python 3.7.4
 ```
 
-- NICS data from data section
-Follow link and move file from data folder to folder named data in this repositories root directory
+- NICS [Data](#Data)
+1. There is a CSV in the data folder titled `nics-firearm-background-checks.csv`
+2. Move that file to the data folder in this repos root directory
 
-- Population density information
-Needs to be in same data folder
+- Population Density [Data](#Data)
+1. For added functionality, get the entire set, to play my runbook you'll need the years 1999 - 2018
 
 ## Findings
-To see the run book on how these finding were produced please vist the `Capstone.ipynb` file.  You will need a copy of the data sets to run the notebook yourself but you should be able to see the prerun results
-
+To see the run book on how these findings were produced please visit the `Capstone.ipynb` file.  You will need a copy of the data sets to run the notebook yourself but you will be able to see the results.
+ 
 I started by making two graphs that I thought would be illustrative to exploring my hypothesis. Graph A is a bar chart where each bar represents a states ratio of handgun to long gun purchases.  The dark line represents the threshold for a 1-1 ratio.
-
+ 
 Example:
-    
-    District of Columbia = 976 handgun applications and 40 rifle applications equate to a 24.4
-    Montana = 38393 handgun applications and 58497 rifle applications for a proportion of .66
+  
+   District of Columbia = 976 handgun applications and 40 rifle applications equate to a 24.4
+   Montana = 38393 handgun applications and 58497 rifle applications for a proportion of .66
+ 
+The black line running horizontally across the graph represents a 1-1 ratio of handgun to rifle applications.  This means states whose bars are above the line have proportionally more applications for handguns then rifles and states with bars below the line have more rifle applications then ones for handguns.
+ 
+The states are sorted from the states with the lowest numbers of persons per square mile on the left and the most dense on the right.
 
+#### Chart 1A
 <img alt="Ratio by population density" src='graphs/bar.png'>
 
-My problem with this graph is that it is scewed in it's scope by the District of Columbia which is a massive outlier in terms of both population density and proportion of handgun to rifle applications filed.  The median population density is 107 but the mean is 423. This is obviously because of DC at 11,516 with it's next most populas state at 1201. Also it's handgun/rifle application proportion is 24 where the next state with the highest proportion is only 3.16 (Table 1 & 2)  This next graph better shows the differences between states with DC removed
+My problem with this graph is that it is skewed in its scope by the District of Columbia which is a massive outlier in terms of both population density and proportion of applications filed for handguns vs rifles.  The median population density is 107 but the mean is 423. This is obviously because of DC at 11,516 with its next most populous state at 1201. Also it's handgun/rifle application proportion is 24 where the next state with the highest proportion is only 3.16 ([Table](#Tables) 1 & 2)  This next graph better shows the differences between states with DC removed
 
+#### Chart 1B
 <img alt="Ratio by population density" src='graphs/bar-noDC.png'>
 
 #### Hypothesis A Support
-This chart would seem to sugest that, in general, states with higher population density have a higher proportion of applications for handguns to rifles which means it supports my initial Hypothesis(A).
+This chart would seem to suggest that, in general, states with higher population density have a higher proportion of applications for handguns to rifles which means it supports my initial Hypothesis(A).  I make this claim because I belive there is an obvious upward trend in chart 1B.  If you look at chart 1A and 2B in conjunction to get an idea of how much of an outlier the District of Columbia is in terms of population density and handgun/longun applications it also seems to support my initial hypothesis.
+ 
+Next I chose to chart the raw numbers with a scatter plot so that I could look at the actual number of occurrences and proportion of population density change between states.  In the following graph the lines represent each state with that state's number of handgun and rifle applications being represented by dots on the line.  Since we know that DC is such an obvious outlier we are going to begin by looking at a plot with DC's data removed.
 
-Next I chose to chart the raw numbers with a scatter plot so that I could look at the actual number of occurances and propotion of population density change between states.  In the following graph the lines represent a state with that states number of handgun and rifle applications being represented by dots on the each line.  Since we know that DC is such an obvious outlier we are going to begin by looking at a plot with DC's data removed.
-
+#### Chart 2A
 <img alt="Raw applications by population density" src='graphs/scatter.png'>
 
 Just so we can assure of ourselves of what the data would look like if we included DC here is the same chart but without the state lines and DC included
 
+#### Chart 2B
 <img alt="Raw applications by population density" src='graphs/scatter-withDC.png'>
 
 Here is another example of the last chart but with each population density as the label and evenly spaced along the X axis for easier visualization
 
+#### Chart 2C
 <img alt="Normalized population density and raw application data" src='graphs/norm-scatter-withDC.png'>
 
 #### Hypothesis C Nullification
-By looking at the above charts I can almost certainly confirm the null hypothesis to Hypothesis(C).  There is no evidence that states with higher population densities filed more applications for handguns.
+By looking at the above charts I can almost certainly confirm the null hypothesis to Hypothesis(C).  There is no evidence that states with higher population densities filed more applications for handguns.  I reach this conclusion by looking at chart 2C.  On chart 2C you can see that the distribution of handgun applications is fairly uniform.  
 
 #### Hypothesis B Nullification
-It's also not apperent that states with lower population densities had a higher rate of rifle applications.  In both cases the flat number of applications seems to be fairly uniform.
+It's also not apperent that states with lower population densities had a higher rate of rifle applications.  In both cases the raw number of applications seems to be fairly uniform.
 
 
 
