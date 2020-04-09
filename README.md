@@ -79,14 +79,14 @@ My problem with this graph is that it is skewed in its scope by the District of 
 <img alt="Ratio by population density" src='graphs/bar-noDC.png'>
 
 #### Hypothesis A Support
-This chart would seem to suggest that, in general, states with higher population density have a higher proportion of applications for handguns to rifles which means it supports my initial Hypothesis(A).  I make this claim because I belive there is an obvious upward trend in chart 1B.  If you look at chart 1A and 2B in conjunction to get an idea of how much of an outlier the District of Columbia is in terms of population density and handgun/longun applications it also seems to support my initial hypothesis.
- 
-Next I chose to chart the raw numbers with a scatter plot so that I could look at the actual number of occurrences and proportion of population density change between states.  In the following graph the lines represent each state with that state's number of handgun and rifle applications being represented by dots on the line.  Since we know that DC is such an obvious outlier we are going to begin by looking at a plot with DC's data removed.
+This chart would seem to suggest that, in general, states with higher population density have a higher proportion of applications for handguns to rifles which means it supports my initial Hypothesis(A).  I make this claim because I believe there is an obvious upward trend in chart 1B.  If you look at chart 1A and 2B in conjunction to get an idea of how much of an outlier the District of Columbia is in terms of population density and handgun/longun applications it also seems to support my initial hypothesis.
 
+Next I chose to chart the raw numbers with a scatter plot so that I could look at the actual number of occurrences and proportion of population density change between states.  In the following graph the lines represent each state with that state's number of handgun and rifle applications being represented by dots on the line.  Since we know that DC is such an obvious outlier we are going to begin by looking at a plot with DC's data removed.
+ 
 #### Chart 2A
 <img alt="Raw applications by population density" src='graphs/scatter.png'>
 
-Just so we can assure of ourselves of what the data would look like if we included DC here is the same chart but without the state lines and DC included
+Just so we can assure ourselves of what the data would look like if we included the District of Columbia, here is the same chart but without the state lines and with DC included.
 
 #### Chart 2B
 <img alt="Raw applications by population density" src='graphs/scatter-withDC.png'>
@@ -97,10 +97,10 @@ Here is another example of the last chart but with each population density as th
 <img alt="Normalized population density and raw application data" src='graphs/norm-scatter-withDC.png'>
 
 #### Hypothesis C Nullification
-By looking at the above charts I can almost certainly confirm the null hypothesis to Hypothesis(C).  There is no evidence that states with higher population densities filed more applications for handguns.  I reach this conclusion by looking at chart 2C.  On chart 2C you can see that the distribution of handgun applications is fairly uniform.  
-
+By looking at the above charts I can almost certainly confirm the null hypothesis to Hypothesis(C).  There is no evidence that states with higher population densities filed more applications for handguns.  I reach this conclusion by looking at chart 2C.  On chart 2C you can see that the distribution of handgun applications is fairly uniform. 
+ 
 #### Hypothesis B Nullification
-It's also not apperent that states with lower population densities had a higher rate of rifle applications.  In both cases the raw number of applications seems to be fairly uniform.
+It's also not apparent that states with lower population densities had a higher rate of rifle applications.  In both cases the raw number of applications seems to be fairly uniform.
 
 
 
@@ -131,125 +131,5 @@ Table 2 = Description of data excluding DC
 |50%   |2018.0|84545.0           |92793.0           |107.008805        |1.1934184019619565 |
 |75%   |2018.0|177639.75         |152579.5          |219.6491175       |1.4740263060688625 |
 |max   |2018.0|643595.0          |452932.0          |1201.0947800000001|3.1627863509456446 |
-<!--
-===========================================================V TEMPLATEING IDEAS V===================================================
 
-Table 1 = Description of data including DC
-
-|FIELD1|year  |total_handgun     |total_long_gun    |pop_density       |handgun/long_gun   |
-|------|------|------------------|------------------|------------------|-------------------|
-|count |51.0  |51.0              |51.0              |51.0              |51.0               |
-|mean  |2018.0|138054.07843137256|103376.60784313726|423.35861745098043|1.6540754923677627 |
-|std   |0.0   |149504.35134601843|85730.34706452048 |1605.7997009585968|3.297578803277349  |
-|min   |2018.0|10.0              |31.0              |1.28934           |0.07050341075900181|
-|25%   |2018.0|40816.0           |36366.0           |49.28428          |0.9026160053394    |
-|50%   |2018.0|80350.0           |91200.0           |107.04415         |1.1951771451060367 |
-|75%   |2018.0|174336.5          |151466.0          |225.18950999999998|1.494311656277248  |
-|max   |2018.0|643595.0          |452932.0          |11515.65574       |24.4               |
-
-
-Table 2 = Description of data excluding DC
-
-|FIELD1|year  |total_handgun     |total_long_gun    |pop_density       |handgun/long_gun   |
-|------|------|------------------|------------------|------------------|-------------------|
-|count |50.0  |50.0              |50.0              |50.0              |50.0               |
-|mean  |2018.0|140795.64         |105443.34         |201.51267500000003|1.199157002215119  |
-|std   |0.0   |149721.60191989527|85307.67804992583 |264.5673177684518 |0.5710118989817893 |
-|min   |2018.0|10.0              |31.0              |1.28934           |0.07050341075900181|
-|25%   |2018.0|44137.5           |38391.5           |46.46945          |0.8928885698273171 |
-|50%   |2018.0|84545.0           |92793.0           |107.008805        |1.1934184019619565 |
-|75%   |2018.0|177639.75         |152579.5          |219.6491175       |1.4740263060688625 |
-|max   |2018.0|643595.0          |452932.0          |1201.0947800000001|3.1627863509456446 |
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-I'm chosing to look at data from 1999 through 2018.  This is because my population density data ends in 2018 and my NICS data begins at the end of 1998.  This is also because that is a 20 year span and I like round numbers.
-### Installing  
-
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
-## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
-## Authors
-
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
--->
 
