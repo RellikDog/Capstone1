@@ -62,8 +62,10 @@ To see the run book on how these findings were produced please visit the `Capsto
 I started by making two graphs that I thought would be illustrative to exploring my hypothesis. Graph A is a bar chart where each bar represents a states ratio of handgun to long gun purchases.  The dark line represents the threshold for a 1-1 ratio.
  
 Example:
-   District of Columbia = 976 handgun applications and 40 rifle applications equate to a 24.4
-   Montana = 38393 handgun applications and 58497 rifle applications for a proportion of .66
+
+`District of Columbia had 976 handgun applications and 40 rifle applications equate to a 24.4`
+  
+`Montana had 38393 handgun applications and 58497 rifle applications for a proportion of .66`
  
 The black line running horizontally across the graph represents a 1-1 ratio of handgun to rifle applications.  This means states whose bars are above the line have proportionally more applications for handguns then rifles and states with bars below the line have more rifle applications then ones for handguns.
  
