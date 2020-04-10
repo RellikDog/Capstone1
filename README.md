@@ -36,7 +36,7 @@ This data is looking only at applications for background checks and makes no cla
 ### Hypothesis
 A) I predict that the ratio of handgun to long gun applications will be higher in states with higher population densities. [Support](#Hypothesis-A-Support)
  
-B) I also predict that states with lower population density will have a higher occurrence of rifle applications. [Null](#Hypothesis-B-Nullification)
+B) States in the top half of population densities will have more applications for handguns by raw numbers[Support](#Hypothesis-B-Support)
  
 C) I predict that states with a higher population density will have a higher occurrence of handgun applications. [Null](#Hypothesis-C-Nullification)
 
@@ -97,11 +97,11 @@ Here is another example of the last chart but with each population density as th
 #### Chart 2C
 <img alt="Normalized population density and raw application data" src='graphs/norm-scatter-withDC.png'>
 
-#### Hypothesis C Nullification
-By looking at the above charts I can almost certainly confirm the null hypothesis to Hypothesis(C).  There is no evidence that states with higher population densities filed more applications for handguns.  I reach this conclusion by looking at chart 2C.  On chart 2C you can see that the distribution of handgun applications is fairly uniform. 
+#### Hypothesis B Support
+The above graph supports my hypothesis B because the black dots are clearly higher on the right half of the graph  
  
-#### Hypothesis B Nullification
-It's also not apparent that states with lower population densities had a higher amount of rifle applications.  In both cases the raw number of applications seems to be fairly uniform.
+#### Hypothesis C Nullification
+It supports the null hypothesis to my Hypothesis C because the distribution of red dots is fairly uniform throughout the graph
 
 ## Further exploration
 
