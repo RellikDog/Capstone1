@@ -101,7 +101,24 @@ Here is another example of the last chart but with each population density as th
 By looking at the above charts I can almost certainly confirm the null hypothesis to Hypothesis(C).  There is no evidence that states with higher population densities filed more applications for handguns.  I reach this conclusion by looking at chart 2C.  On chart 2C you can see that the distribution of handgun applications is fairly uniform. 
  
 #### Hypothesis B Nullification
-It's also not apparent that states with lower population densities had a higher rate of rifle applications.  In both cases the raw number of applications seems to be fairly uniform.
+It's also not apparent that states with lower population densities had a higher amount of rifle applications.  In both cases the raw number of applications seems to be fairly uniform.
+
+## Further exploration
+
+<img alt="3d lines" src='graphs/3dline-handgun-nodc.png'>
+
+This shows a line graph where each line is a state.  The line moving toward us is that state advancing in time from 1999 - 2018 at it's closest point.  The left to right movment signifies that states population density in persons per square meter.  Finally the higher a states line is the more handgun applications there were.  Below is the same graph but for rifle applications
+
+<img alt="3d lines" src='graphs/3dline-longgun-nodc.png'>
+
+What these graphs say to me is that the largest numbers of applications happen in the middle of the data set and the population density for states did not vary much over our time frame
+
+
+
+
+One last graph including the District of Columbia, it doesn't show much but it looks nice.
+
+<img alt="joke graph" src='graphs/thanks-dc.png'>
 
 
 
