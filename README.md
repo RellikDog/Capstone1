@@ -8,7 +8,7 @@ Project exploring links between NICS(FBI national firearm background checks syst
 
 [Tables](#Tables)
 
-Slides @ https://docs.google.com/presentation/d/1p4tVvrS8V48Yg90O-lMksbxnbFtQv3zxQe-bM51BmtE/edit?usp=sharing
+[Slides](https://docs.google.com/presentation/d/1p4tVvrS8V48Yg90O-lMksbxnbFtQv3zxQe-bM51BmtE/edit?usp=sharing)
 
 ### Team:
 
